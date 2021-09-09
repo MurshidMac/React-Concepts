@@ -9,10 +9,10 @@ function App() {
     setUsersList((prevUserList) => { return [...prevUserList, {name: uName, age: uAge, id: Math.random().toString()}]})
   }
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler}/>
       <UserList users={usersList} />
-    </div>
+    </>
   );
 }
 
